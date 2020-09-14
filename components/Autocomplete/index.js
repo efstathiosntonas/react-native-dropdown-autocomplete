@@ -197,6 +197,7 @@ class Autocomplete extends Component {
               }
             }}
             onSubmitEditing={this.props.onSubmitEditing}
+            returnKeyType={this.props.returnKeyType}
           />
           {loading && (
             <ActivityIndicator

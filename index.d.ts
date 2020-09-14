@@ -46,6 +46,7 @@ type AutocompleteProps = {
     rightTextExtractor?: (item: any) => void;
     fetchData?: (search: string) => Promise<any[]>;
     onSubmitEditing?: TextInputProps["onSubmitEditing"];
+    returnKeyType?: TextInputProps["returnKeyType"];
 }
 
 export class Autocomplete extends React.Component<AutocompleteProps, any> {
