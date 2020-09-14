@@ -1,4 +1,3 @@
-import React, {Component, Fragment} from "react";
 import {findNodeHandle, ActivityIndicator, TextInput, View} from "react-native";
 import {string, bool, number, func} from "prop-types";
 import Dropdown from "../Dropdown";
@@ -196,6 +195,7 @@ class Autocomplete extends Component {
                 scrollToInput(findNodeHandle(event.target));
               }
             }}
+            onSubmitEditing={this.props.onSubmitEditing}
           />
           {loading && (
             <ActivityIndicator
