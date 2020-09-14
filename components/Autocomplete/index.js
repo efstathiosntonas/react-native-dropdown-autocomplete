@@ -196,6 +196,7 @@ class Autocomplete extends Component {
                 scrollToInput(findNodeHandle(event.target));
               }
             }}
+            onSubmitEditing={this.props.onSubmitEditing}
           />
           {loading && (
             <ActivityIndicator
