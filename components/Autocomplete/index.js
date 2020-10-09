@@ -156,7 +156,6 @@ class Autocomplete extends Component {
   componentDidUpdate(prevProps){
     const shouldUpdateInitialValue = (
       prevProps.initialValue !== this.props.initialValue
-      && this.state.initialValue !== this.props.initialValue
     );
 
     if (!shouldUpdateInitialValue){
