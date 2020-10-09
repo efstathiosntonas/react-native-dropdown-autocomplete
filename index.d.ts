@@ -1,7 +1,7 @@
 // Type definitions for react-native-dropdown-autocomplete 1.0
 
 import * as React from 'react';
-import { ViewStyle, TextStyle, StyleProp, KeyboardTypeOptions } from 'react-native';
+import { ViewStyle, TextStyle, StyleProp, KeyboardTypeOptions, TextInputProps } from 'react-native';
 
 type AutocompleteProps = {
     autoCorrect?: boolean;
@@ -35,7 +35,7 @@ type AutocompleteProps = {
     pickerStyle?: StyleProp<TextStyle>;
     containerStyle?: StyleProp<ViewStyle>;
     scrollStyle?: StyleProp<ViewStyle>;
-
+    onSubmitEditing?: TextInputProps["onSubmitEditing"];
     scrollToInput?: (ev: any) => void;
     handleSelectItem: (item: any, index: number) => void;
     onDropdownShow?: () => void;
