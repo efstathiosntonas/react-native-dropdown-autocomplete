@@ -153,6 +153,21 @@ class Autocomplete extends Component {
     }
   }
 
+  componentDidUpdate(prevProps){
+    const shouldUpdateInitialValue = (
+      prevProps.initialValue !== this.props.initialValue
+      && this.state.initialValue !== this.props.initialValue
+    );
+
+    if (!shouldUpdateInitialValue){
+      return;
+    }
+
+    this.setState({
+      initialValue: this.props.initialValue
+    })
+  }
+
   render() {
     const {inputValue, items, loading, filteredItems} = this.state;
     const {
