@@ -163,7 +163,7 @@ class Autocomplete extends Component {
     }
 
     this.setState({
-      initialValue: this.props.initialValue
+      inputValue: this.props.initialValue
     })
   }
 
